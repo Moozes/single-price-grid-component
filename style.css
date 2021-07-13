@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan2: hsl(179, 40%, 53%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    --Font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height : 100vh;
+    background: var(--Light-Gray);
+}
+
+.container {
+    width : 45%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .bottom {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.container .bottom .left {
+    flex-basis: 50%;
+    /* align-self: stretch; */
+}
+
+.container .bottom .left .price {
+    display: flex;
+    align-items: center;
+}
+
+.container .bottom .right {
+    flex-basis: 50%;
+}
+
+.white {
+    color : white;
+}
+.cyan {
+    color : var(--Cyan);
+}
+.cyan2 {
+    color : var(--Cyan2);
+}
+.bright-yellow{
+    color : var(--Bright-Yellow);
+}
+.light-gray {
+    color : var(--Light-Gray);
+}
+.grayish-blue {
+    color : var(--Grayish-Blue);
+}
+
+.bg-white {
+    background: white;
+}
+.bg-cyan {
+    background: var(--Cyan);
+}
+.bg-cyan2 {
+    background: var(--Cyan2);
+}
+.bg-grayish-blue {
+    background: var(--Grayish-Blue);
+}
+
+.font400 {
+    font-weight: 400;
+}
+.font700 {
+    font-weight: 700;
+}
+
+.font-big    {
+    font-size : 20px;
+}
+.font-medium {
+    font-size : 16px;
+}
+.font-small {
+    font-size : 14px;
+}
+
+.btn-green {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    background: var(--Bright-Yellow);
+    color : white;
+    width : 100%;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    font-weight: 700;
+}
+
+.p {
+    padding: 30px;
+}
+.m0 {
+    margin-bottom: 3px;
+}
+.m1 {
+    margin-bottom: 5px;
+}
+.m2 {
+    margin-bottom: 10px;
+}
+.m3 {
+    margin-bottom: 15px;
+}
+.m4 {
+    margin-bottom: 20px;
+}
+
+
+.container, .top, .bottom, .right, .left {
+    /* border : 1px solid black; */
+}
+
+
+@media(max-width : 375px) {
+    body {
+        padding : 50px 0;
+    }
+
+    .container {
+        width : 90%;
+    }
+
+    .container .bottom {
+        flex-direction: column;
+    }
+}
+
+
